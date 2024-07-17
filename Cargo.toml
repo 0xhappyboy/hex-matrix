@@ -5,7 +5,7 @@ authors = ["happyboy <superhappyboy1995@gmail.com>"]
 description = "build hex matrix using byte array"
 keywords = [
   "serialization",
-  "data processing",
+  "hex",
 ]
 license = "GPL-3.0"
 readme = "README.md"

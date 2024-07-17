@@ -1,7 +1,7 @@
 use std::fs;
 
 use bincode::serialize;
-use hex_matrix::matrix::{Matrix};
+use hex_matrix::matrix::{Line, Matrix};
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]

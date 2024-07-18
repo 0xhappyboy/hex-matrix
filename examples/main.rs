@@ -32,4 +32,16 @@ fn main() {
     let buffer = fs::read("/resource/TEST_1").expect("read file error");
     let mut m = Matrix::new(20, buffer.to_vec());
     m.print_matrix();
+    println!(
+        "-------------------------------- line by line processing --------------------------------"
+    );
+    let lines = m.lines();
+    for (i, v) in lines.iter().enumerate() {
+        println!(
+            "line no:{}, line hex:{}, line info:{}",
+            v.no(),
+            v.hex(),
+            v.info()
+        );
+    }
 }

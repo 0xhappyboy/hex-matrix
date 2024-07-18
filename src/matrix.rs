@@ -127,6 +127,24 @@ impl Matrix {
         self.lines.len()
     }
 
+    /// get matrix line
+    ///
+    /// # Examples
+    ///
+    /// ```rust
+    /// let arr = "".as_bytes();
+    /// let mut m = Matrix::new(20, arr.to_vec());
+    ///
+    /// let lines : Vec<Line> = m.lines();
+    /// for (i,v) in lines.iter().enumerate()
+    /// {
+    ///   // ....
+    /// }
+    /// ```
+    pub fn lines(&self) -> Vec<Line> {
+        self.lines.clone()
+    }
+
     fn to_matrix(width: usize, b_arr: Vec<u8>) -> Vec<Line> {
         let len = b_arr.len();
         let mut lines: Vec<Line> = vec![];

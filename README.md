@@ -6,6 +6,22 @@ build hex matrix using byte array
 let b_arr = vec![];
 let mut m = Matrix::new(20, arr.to_vec());
 ```
+## Line
+hex-matrix is ​​processed on a per-row basis.
+```rust
+let b_arr = vec![];
+let mut m = Matrix::new(20, arr.to_vec());
+
+let lines : Vec<Line> = m.lines();
+```
+### Line Structure
+```rust
+no : line number
+hex : the hexadecimal data of this line
+info : the character data corresponding to this line of hexadecimal data
+```
+### Schematic
+![alt image](./resource/image.png) <br>
 ## Serialized String
 ```rust
 let arr = "".as_bytes();
